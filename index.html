@@ -10,28 +10,22 @@
     
 <header>
 <h1>Stefan Korder</h1>
-<div>
 <nav>
     <a href="#contact"><button type="submit">Kontakt</button></a>
     <a href="#biography"><button type="submit">Biografie</button></a>
 </nav>
-</div>
 </header>
-
-<br>
 
 <main>
 
-<section>
-    <div>
-        <img src="images/stefan-korder.1024x1024.jpg" alt="Profilbild" height="200">
-    </div>
-    <div>
-    <p>
+<section class="greenbg">
+<div class="sections">
+    <img class="profil-pic" src="images/stefan-korder.1024x1024.jpg" alt="Profilbild" height="200">
+    <p class="profiltxt">
     Hallo mein Name ist Stefan Korder und es freut mich, dass du meine Seite besucht!
     </p>
 </div>
-<div>
+<div class="sections white">
     <h2>
     Meine Interessen
     </h2>
@@ -48,42 +42,31 @@
         <li>Versicherungen</li>
         <li>Betriebswirtschaftslehre</li>
     </ul>
-</div>    
-</section>
-
-<section id="contact">
-<div>
+</div>  
+<div class="sections" id="contact">
    <h3>Hier sind meine Kontaktdaten</h3>  
-    <table class="contact">
-        <tr>
-            <td>Mail:</td>
-            <td>xtybevip@googlemail.com</td>
-        </tr>
-        <tr>
-            <td>Handy-Nr.:</td>
-            <td>0152/53453231</td>
-        </tr>
-    </table>
-    <form action="">
+    <p class="contacttxt">Mail: xtybevip@googlemailcom</p>
+    <p class="contacttxt">Mobil-Nr.: 015253453231</p>
+    <form class="contactlayout" action="">
         <div>
-            <label for="name">Nachname:</label>
+            <label class="formtextname" for="name">Nachname:</label>
             <input type="text" name="" id="name">
         </div>
         <div>
-            <label for="vorname">Vorname:</label>
+            <label class="formtextvorname" for="vorname">Vorname:</label>
             <input type="text" name="" id="vorname">
         </div>
         <div>
-            <label for="mail">E-Mail:</label>
+            <label class="formtextmail" for="mail">E-Mail:</label>
             <input type="email" name="" id="mail">
         </div>
         <div>
             <label for="message">Deine Nachricht</label> <br>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" cols="20" rows="10"></textarea>
         </div>
         <div>
             <label for="agb">Nutzungsbedingungen aktzeptieren</label>
-            <input type="checkbox" name="" id="agb" checked>      
+            <input type="checkbox" name="" id="agb" checked><br>      
             <button type="submit">Abschicken</button>
         </div>
     </form>
@@ -91,29 +74,21 @@
 </section>
 
 <section>
-    <table class="profile">
-        <tr>
-            <td><img src="images/github.webp" alt="" width="250"></td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/stefankorder" target="_blank">Github-Profil</a></td>
-        </tr>
-        <tr>
-            <td><img src="images/codepen.png" alt="" width="250"></td>
-        </tr>
-        <tr>
-            <td><a href="https://codepen.io/xtybevip/" target="_blank">Godepen-Profil</a></td>
-        </tr>
-        <tr>
-            <td><img src="images/xing.jpg" alt="" width="250"></td>
-        </tr>
-        <tr>
-            <td><a href="https://www.xing.com/profile/Stefan_Korder3/cv" target="_blank">XING-Profil</a></td>
-        </tr>
-    </table>
+    <div class="profile white">
+        <div><img src="images/github.webp" alt="" width="250"></div>
+        <div><a href="https://github.com/stefankorder" target="_blank">Github-Profil</a></div>
+    </div>
+    <div class="profile green">
+        <div><img src="images/codepen.png" alt="" width="250"></div>
+        <div><a href="https://codepen.io/xtybevip/" target="_blank">Godepen-Profil</a></div>
+    </div>
+    <div class="profile white">
+        <div><img src="images/xing.jpg" alt="" width="250"></div>
+        <div><a href="https://www.xing.com/profile/Stefan_Korder3/cv" target="_blank">XING-Profil</a></div>
+    </div>
 </section>
 
-<section id="biography">
+<section class="greenbg" id="biography">
     <h5>Über mich</h5>
     <p>
         Geboren bin ich 1988 in Frankfurt am Main, 
@@ -171,9 +146,9 @@
 </main>
 
 <footer>
-    <div>
+    <p>
         Copyright by Stefan Korder. Alle Rechte vorbehalten.
-    </div>
+    </p>
 </footer>
 
 </body>
