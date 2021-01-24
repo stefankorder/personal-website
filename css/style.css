@@ -31,10 +31,22 @@ main {
     width: 100%;
 }
 
+@media (min-width: 768px) {
+    main {
+        margin-top: 0;
+    }
+}
+
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     border-bottom: 1px solid black;
+    border-top: 1px solid black;
     width: 100%;
+    height: 3rem;
+    background-color: rgb(177, 190, 177);
 }
 
 section {
@@ -69,8 +81,14 @@ h2 {
 }
 
 h3 {
-    margin: 0.5rem 1.5rem;
+    margin: 0.5rem 1rem;
     font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        margin: 0.5rem;
+    }
 }
 
 h5 {
@@ -113,7 +131,7 @@ button {
 }
 
 .greenbg {
-    background-color: rgb(139, 153, 139);
+    background-color: rgb(177, 190, 177);
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
@@ -123,15 +141,35 @@ border: 1px solid black;
 margin: 0.5rem;
 }
 
+.stefankorder {
+    text-align: center;
+}
+
 .profil-pic {
     margin-left: 1.5rem;
     margin-top: 0.5rem;
+    border: 1px solid black;
 }
 
 .profiltxt {
     margin: 0.5rem 1.5rem;
     hyphens: auto; 
 	text-align: justify
+}
+
+.contact-div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .contact-div {
+        flex-direction: row;
+        width: auto;
+        text-align: center;
+    }
 }
 
 .contactlayout {
@@ -145,8 +183,40 @@ margin: 0.5rem;
     font-size: 0.7rem;
 }
 
+@media (min-width: 768px) {
+    .contactlayout {
+        flex-direction: row;
+        align-items: flex-start;
+        border: 1px solid black;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .input-table {
+        margin-top: 1.5rem;
+    }
+}
+
 .contacttxt {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+    .contacttxt {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.contacttxt-under {
+    margin-bottom: 0.5rem;
+}
+
+.formtext {
+    text-align: left;
+    margin-left: 1.4rem;
+    margin-bottom: 1rem;
 }
 
 .formtextname {
@@ -154,11 +224,11 @@ margin: 0.5rem;
 }
 
 .formtextvorname {
-    padding-right: 0.65rem;
+    padding-right: 0.7rem;
 }
 
 .formtextmail {
-    padding-right: 1.5rem;
+    padding-right: 1.55rem;
 }
 
 .formnachricht {
@@ -237,7 +307,63 @@ margin: 0.5rem;
     background-color: white;
 }
 
-.green {
-    background-color: rgb(139, 153, 139);
+.white-contact {
+    background-color: white;
+    border: 1px solid black;
+    width: 14rem;
+    margin-top: 0.5rem;
+
 }
 
+@media (min-width: 768px) {
+    .white-contact {
+        margin-left: 0.5rem;
+        text-align: left;
+        width: auto;
+    }
+}
+
+.green {
+    background-color: rgb(177, 190, 177);
+}
+
+@media (min-width: 768px) {
+    .display-out {
+        display: none;
+    }
+}
+
+.display-in {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .display-in {
+        display: block;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    width: 100%;
+    text-align: right;
+}
+
+.sidebar-table {
+    display: inline-flex;
+    flex-direction: column;
+    width: 2.5rem;
+    height: 9.50rem;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.sidebar-link {
+    margin: 0.5rem 0.25rem 0.5rem 0;
+    transform: rotate(90deg);
+}
+
+.sidespace {
+    width: 2.5rem;
+    height: 1.5rem;
+}
