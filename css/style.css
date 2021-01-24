@@ -167,7 +167,7 @@ margin: 0.5rem;
 @media (min-width: 768px) {
     .contact-div {
         flex-direction: row;
-        width: auto;
+        width: 50rem;
         text-align: center;
     }
 }
@@ -262,6 +262,7 @@ margin: 0.5rem;
     border: 1px solid black;
     margin: 0.5rem 0.5rem 0 0.5rem;
     border-bottom-style: none;
+    width: 24rem;
     }
 
 @media (min-width: 768px) {
@@ -277,6 +278,7 @@ margin: 0.5rem;
      border: 1px solid black;
      margin: 0 0.5rem 0.5rem 0.5rem;
      border-top-style: none;
+     width: 24rem;
     }
 
 @media (min-width: 768px) {
