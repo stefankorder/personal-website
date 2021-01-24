@@ -28,6 +28,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 6rem;
+    width: 100%;
 }
 
 footer {
@@ -54,21 +55,43 @@ div {
     width: 16rem;
 }
 
+ul {
+    list-style-type: square;
+}
+
 li {
     margin-left: 0;
 }
 
 h2 {
     margin: 0.5rem 1.5rem;
+    font-size: 1.2rem;
 }
 
 h3 {
     margin: 0.5rem 1.5rem;
+    font-size: 1rem;
+}
+
+h5 {
+    margin: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+h6 {
+    margin: 0.5rem 1.5rem;
+    font-size: 1.2rem;
 }
 
 p {
     padding: 0;
     margin: 0;
+}
+
+em {
+    font-style: normal;
+    display: block;
+    text-align: center;
 }
 
 a {
@@ -107,6 +130,8 @@ margin: 0.5rem;
 
 .profiltxt {
     margin: 0.5rem 1.5rem;
+    hyphens: auto; 
+	text-align: justify
 }
 
 .contactlayout {
@@ -144,13 +169,68 @@ margin: 0.5rem;
 .profile {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
     border: 1px solid black;
     margin: 0.5rem;
     height: 11rem;
     background-color: white;
+}
+
+.profile:hover {
+    border-width: 2px;
+}
+
+@media (min-width: 768px) {
+    .about {
+        align-self: stretch;
+    }
+}
+
+.cv1 {
+    border: 1px solid black;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border-bottom-style: none;
+    }
+
+@media (min-width: 768px) {
+    .cv1 {
+        border: 1px solid black;
+        margin: 0.5rem;
+        border-bottom-style: solid;
+        align-self: stretch;
+    }
+}
+
+.cv2 {
+     border: 1px solid black;
+     margin: 0 0.5rem 0.5rem 0.5rem;
+     border-top-style: none;
+    }
+
+@media (min-width: 768px) {
+    .cv2 {
+        border: 1px solid black;
+        margin: 0.5rem;
+        border-top-style: solid;
+        align-self: flex-start;
+    }
+}
+
+.cv-table {
+    margin: 0.5rem 0.8rem;
+    padding: 0.5rem;
+}
+
+.cv-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+}
+
+.cv-headline {
+    height: 2rem;
+    text-align: center;
 }
 
 .white {
@@ -159,9 +239,5 @@ margin: 0.5rem;
 
 .green {
     background-color: rgb(139, 153, 139);
-}
-
-.profile td {
-    border: 1px solid black;
 }
 
